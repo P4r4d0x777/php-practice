@@ -1,0 +1,32 @@
+*{
+  color: rgb(180, 169, 169);
+}
+.calc{
+  background-color: gray;
+  margin-left: 35%;
+  border: 2px solid black;
+  width: 300px;
+}
+#head{
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid white;
+  letter-spacing: 4px;
+  margin-top: 0px;
+}
+.base{
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -33px;
+}
+input[name=param2]{
+	margin-top: 5px;
+}
+.signs{
+  position: absolute;
+  margin-left: 45px;
+  margin-top: -34px;
+}
+input[name=errors]{
+  margin-top: 5px;
+}

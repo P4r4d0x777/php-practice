@@ -1,0 +1,17 @@
+table{
+	margin-left: 25%;
+	width: 50%;
+	border-collapse: collapse;
+	border: 1rem solid gray;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hat{
+	font-weight: bold;
+}
+td{
+	border-collapse: collapse;
+	border: 2px solid black;
+	text-align: center;
+}
+
+		

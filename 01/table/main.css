@@ -1,0 +1,749 @@
+tr{
+  vertical-align: top;
+}
+*{
+  margin:0;
+  padding:0;
+}
+@font-face {
+  font-family: "Hum521Rm";
+  src: url(../table/fonts/Hum521Rm.ttf);
+}
+@font-face{
+  font-family: "Arial";
+  src: url(../table/fonts/Arial.ttf);
+}
+body{ 
+  background: url( "images/main_layer.png") no-repeat; 
+  background-size: cover;
+}
+.first{
+  height: 155px;
+}
+.second{
+  height: 242px;
+}
+.third{
+  height: 35px;
+}
+.four{
+  height: 520px;
+}
+
+/*Оболочка всего сайта*/
+.wrapper {
+  vertical-align: top;
+  width: 916px;
+  height: 1048px;
+  position:relative;
+  margin: 42px auto 50px auto;
+  box-shadow: 0 0 3px rgba(31, 76, 118, 0.75);
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+}
+/*Логотип IQ_BUSINESS*/
+.logo p
+{
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: "Hum521Rm";
+  font-size: 42px;
+  letter-spacing: -1.05px;
+  line-height: 41px;
+  margin: 34px 0 0 46px;
+}
+/*IQ*/
+.logo span:nth-child(1) {color: #16477b;}
+/*BUSINESS*/
+.logo span:nth-child(2) {color: #0d6fb8;}
+/*Верхний блок для фона*/
+.logo{
+  position:absolute;
+  width: 913px;
+  height: 105px;
+  background-image: url("images/upper_layer.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/*Блок навигации*/
+.navigation{
+  position:absolute;
+  width: 886px;
+  height: 41px;
+  margin: 103px 15px 0 13px;
+  border-bottom: 4px solid #98caf5;
+  padding-bottom: 3px;
+}
+/*Меню верхней навигации*/
+.navigation nav{
+  position:absolute;
+  width: 643px;
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+}
+/*Пункт меню в верхней навигации*/
+.navigation a{
+  display:inline-block;
+  width: 102px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background-color: #93c7f4;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  font-family: "Arial";
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color:#0b2745;
+}
+/*Кнопка Home*/
+.navigation a.home {
+  color:white;
+  background: #4c72a1;
+}
+.navigation a:hover{
+  background-color:#93c1e9af;
+}
+.navigation a:active{
+  color:white;
+  background: #4c72a1;
+}
+/*Поле поиска*/
+.navigation input{
+  position:absolute;
+  margin: 7px 0 0 675px;
+  outline: none;
+  border: 1px solid #cfcfcfc4;
+  height: 20px;
+  width: 114px;
+  border-radius: 9px;
+  background-image: url("images/icon_search.png");
+  background-position: left;
+  background-size: 26px;
+  background-repeat: no-repeat;
+  padding-left: 24px;
+  box-shadow: inset 1px 1px 3px -1px rgba(0, 0, 0, 0.6);
+}
+/*Кнопка Go*/
+.navigation a[target="_self"]{
+  outline: none;
+  border: none;
+  color: #1368a9;
+  width: 55px;
+  height: 8px;
+  padding-top:2px;
+  margin: 5px 0 0 830px;
+  border-radius: 6px;
+  background: rgb(203,206,209);
+  background: linear-gradient(0deg, rgba(203,206,209,1) 23%, rgba(255,255,255,1) 71%);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 500;
+  text-shadow: -1px -1px 0px rgba(0,0,0,0.34);
+  color: #1368a9;
+  text-align: center;
+}
+.navigation img{
+  position: relative;
+  left: 27px;
+}
+.navigation a[target="_self"]:hover{
+  background: cyan;
+}
+.navigation a[target="_self"]:active{
+  background-color: #5bcbff;
+}
+/*Основное меню сайта Левое меню Привествие Логин форма*/
+.menu{
+  position:absolute;
+  width: 886px;
+  height: 242px;
+  margin: 159px 15px 0 15px;
+}
+/*Основное меню слева*/
+.main_menu{
+  float: left;
+  width: 211px;
+  height: 242px;
+  margin-right: 6px;
+  margin-left: 13px;
+  border-bottom-right-radius: 26px;
+  background: #699bc9;
+  font-family: "Arial";
+}
+.main_menu p{
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #06213e;
+  margin: 29px 18px 0 18px;
+  padding-left: 6px;
+  border-bottom: 1px solid #06213e;
+}
+.main_menu ul{
+  list-style-type: none;
+  margin-left:26px;
+  padding-top: 7px;
+}
+.main_menu li{
+  margin-top: 4px;
+}
+.main_menu a{
+  font-family: "Arial";
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #ffffff;
+}
+.main_menu a:hover{
+  color:cyan;
+}
+.main_menu a:active{
+  color: #5bcbff;
+}
+/*Женщина по середине*/
+.woman{
+  background-image: url("images/woman.png");
+  float: left;
+  width: 453px;
+  height: 242px;
+  margin-right: 5px;
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
+}
+.woman p:nth-child(1){
+  font-family: "Hum521Rm";
+  float:right;
+  margin: 154px 20px 0 0;
+  font-size: 26px;
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  color: #16477b;
+}
+.woman p:nth-child(2){
+  font-family: "Hum521Rm";
+  float:right;
+  margin: 0px 13px 0 0;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  color: #16477b;
+}
+/*Логин/Пароль*/
+.login_form{
+  background: #699bc9;
+  float: left;
+  width: 211px;
+  height: 242px;
+  border-bottom-left-radius: 26px;
+}
+/*Login Form text*/
+.login_form p:nth-child(1){
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #06213e;
+  margin: 29px 18px 0 18px;
+  padding-left: 6px;
+  border-bottom: 1px solid #222c4e;
+}
+/*Username text*/
+.login_form p#text_username{
+  font-family: "Arial";
+  font-size: 11px;
+  line-height: 16px;
+  color: white;
+  margin: 13px 0 0 25px;
+}
+.login_form input{
+  outline: none;
+  border: 1px inset #699bc9;
+  margin: 2px 0 0 22px;
+  width: 162px;
+  border-radius: 7px;
+  box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.31), inset 0px 1px 0px 0px rgba(0,0,0,0.47);
+}
+/*password text*/
+.login_form p#text_password{
+  font-family: "Arial";
+  font-size: 11px;
+  line-height: 16px;
+  color: white;
+  margin: 5px 0 0 25px;
+}
+/*remeber checkbox*/
+.login_form input.checkbox{
+  position: relative;
+  float: left;
+  width: 13px;
+  height: 13px;
+  outline: 2px inset #c9c9c9;
+  margin: 12px 0 0 25px;
+  background-color: white;
+}
+.login_form p.remember{
+  font-family: "Arial";
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 11px 0 0 45px;
+}
+/*логин*/
+.login_form a.login{
+  text-decoration: none;
+  position: absolute;
+  top: 305px;
+  margin-left: 109px;
+  height: 20px;
+  width: 75px;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+  text-align: center;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #1368a9;
+  border-radius: 3px;
+  background: rgb(203,206,209);
+  background: linear-gradient(0deg, rgba(203,206,209,1) 0%, rgba(237,238,239,1) 15%, rgba(233,233,233,1) 89%);
+}
+.login_form .login img{
+  position: relative;
+  left: 45px;
+}
+.login_form .login:hover{
+  background: cyan;
+}
+.login_form .login:active{
+  background-color: #5bcbff;
+}
+/*потеря пароля*/
+.login_form a.lost{
+  position: absolute;
+  text-decoration: none;
+  font-family: "Arial";
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #ffffff;
+  margin-left: 25px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+/*нет аккаунта*/
+.login_form p#text_no_account{
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 25px;
+  font-family: "Arial";
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.login_form p#text_no_account a.reg{
+  text-decoration: none;
+  font-weight: 700;
+  color: #06213e;
+}
+.login_form p#text_no_account a:hover{
+  color: cyan;
+}
+.login_form p#text_no_account a:active{
+  color: #5bcbff;
+}
+/*меню по центру*/
+.centre_menu{
+  position:absolute;
+  width: 886px;
+  height: 28px;
+  margin: 4px 15px 0 13px;
+  background: rgb(221,232,242);
+  background: linear-gradient(0deg, rgba(221,232,242,1) 15%, rgba(232,240,247,1) 46%, rgba(241,246,251,1) 89%);
+  border-bottom: 2px solid #9dbad3;
+}
+.centre_menu a{
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 6px;
+  font-family: "Arial";
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #282828;
+  margin-left:26px;
+}
+.centre_menu a:hover{
+  color: rgba(29, 18, 173, 0.788);
+}
+.centre_menu a:active{
+  color: #5bcbff;
+}
+.centre_menu a:nth-child(1) img{
+  position: relative;
+  left: 40px;
+  bottom: 1px;
+}
+.centre_menu a:nth-child(2) img{
+  position: relative;
+  left: 57px;
+  bottom: 1px;
+}
+.centre_menu a:nth-child(3) img{
+  position: relative;
+  left: 55px;
+  bottom: 1px;
+}
+/*Основной контент сайта*/
+td.content{
+  height: 514px;
+  position:absolute;
+  width: 886px;
+  margin: 3px 15px 0 13px;
+  border-bottom: 4px solid #426a93;
+  padding-bottom: 5px;
+}
+/*информация о сайте*/
+table.info{
+  float: left;
+  width: 212px;
+  height: 514px;
+  margin-right: 6px;
+  border-top-right-radius: 26px;
+  background: #c5def3;
+  font-family: "Arial";
+}
+/*Популярные новости(левый сайдбар)*/
+td.popular{
+  height: 263px;
+  border-bottom: 1px solid #91989d;
+}
+td.popular img:nth-child(1){
+  position: absolute;
+  margin-left: 24px;
+  margin-top: 36px;
+}
+td.content p.header{
+  width: 138px;
+  position: absolute;
+  margin-top: 37px;
+  margin-left: 19px;
+  font-family: "Arial";
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #06213e;
+  padding-left: 32px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #699bc9;
+}
+td.popular img[alt="arrows"]{
+  position: absolute;
+  left: 26px;
+  top: 82px;
+}
+td.popular ul{
+  list-style-image: url("images/list.jpg");
+  position: absolute;
+  list-style-type:none;
+  margin-left: 37px;
+  margin-top: 74px;
+  font-size: 9pt;
+} 
+td.popular a{
+  text-decoration: none;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #353f48;
+}
+td.popular a:hover{
+  color: rgba(29, 18, 173, 0.788);
+}
+td.popular a:active{
+  color: #5bcbff;
+}
+/*Последине новости(левый сайдбар)*/
+td.latest img:nth-child(1){
+  position: absolute;
+  margin-left: 24px;
+  margin-top: 32px;
+}
+td.latest p.header{
+  padding-bottom: 5px;
+}
+td.latest img[alt="arrows"]{
+  position: absolute;
+  left: 26px;
+  top: 349px;
+}
+td.latest ul{
+  list-style-image: url("images/list.jpg");
+  position: absolute;
+  list-style-type:none;
+  margin-left: 37px;
+  margin-top: 79px;
+  font-size: 9pt;
+} 
+td.latest a{
+  text-decoration: underline;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height:1px;
+  font-weight: 400;
+  color: #353f48;
+}
+td.latest li{
+  margin-bottom: 15px;
+}
+td.latest a:hover{
+  color: rgba(29, 18, 173, 0.788);
+}
+td.latest a:active{
+  color: #5bcbff;
+}
+/*Центральный блок о компании*/
+table.company{
+  background-image: url("images/upper_layer.png");
+  background-repeat: no-repeat;
+  float: left;
+  width: 453px;
+  height: 514px;
+  margin-right: 5px;
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
+}
+table.company td.header{
+  height: 93px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+table.company td.header p.welcome{
+  position: absolute;
+  margin-top: 37px;
+  margin-bottom: 16px;
+  font-family: "Arial";
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #16284e;
+}
+td.header p.welcome img{
+  margin-left: 71px;
+}
+td.header p.author{
+  width: 392px;
+  position: absolute;
+  margin-top: 65px;
+  font-family: "Arial";
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #0f559d;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #57a3d0;
+}
+table.company p.text{
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #146dac;
+  margin: 20px 47px 0 34px;
+}
+table.company img[alt="notebook"]{
+  position: absolute;
+  margin-top: 29px;
+  margin-left: 40px;
+}
+table.company p.img_info{
+  position: relative;
+  font-family: "Arial";
+  line-height: 17px;
+  font-size: 12px;
+  color: #353f48;
+  margin: 40px 42px 0 162px;
+}
+table.company p.img_info span{
+  font-family: "Arial";
+  font-weight: 700;
+  text-decoration: underline;
+  color: #353f48;
+}
+table.company img[alt="male"]{
+  position: absolute;
+  margin-top: 37px;
+  margin-left: 40px;
+}
+table.company a.read_more{
+  text-decoration: none;
+  position: absolute;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #1368a9;
+  width: 78px;
+  height: 16px;
+  margin-top: 48px;
+  margin-left: 40px;
+  padding-left: 10px;
+  border-radius: 1px;
+  background: rgb(207,210,212);
+  background: linear-gradient(0deg, rgba(207,210,212,1) 0%, rgba(255,255,255,1) 84%);
+}
+table.company a.read_more img{
+  position: relative;
+  left: 6px;
+}
+table.company a.read_more:hover{
+  background: cyan;
+}
+table.company a.read_more:active{
+  background-color: #5bcbff;
+}
+table.company p.update_date{
+  position: absolute;
+  margin-top: 49px;
+  margin-left: 214px;
+  font-family: "Arial";
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #91a5b9;
+}
+/*Правый сайдбар*/
+table.sidebar{
+  background: #c5def3;
+  float: left;
+  width: 210px;
+  height: 514px;
+  border-top-left-radius: 26px;
+}
+/*блок онлайн*/
+td.online{
+  height: 131px;
+  border-bottom: 1px solid #91989d;
+}
+td.online img[alt="online"]{
+  position: absolute;
+  margin-left: 24px;
+  margin-top: 33px;
+}
+td.online p.count{
+  position: absolute;
+  margin-top: 82px;
+  margin-left: 28px;
+  font-family: "Arial";
+  font-size: 9pt;
+  color: #146dac;
+}
+td.online p.count a{
+  color: #ae1b1b;
+  text-decoration: none;
+}
+/*блок голосования*/
+td.polls img[alt="polls"]{
+  position: absolute;
+  margin-left: 24px;
+  margin-top: 32px;
+}
+td.polls p.text_polls{
+  position: absolute;
+  font-family: "Arial";
+  font-size: 9pt;
+  font-weight: bold;
+  margin-left:26px;
+  margin-top: 80px;
+  color: #282828;
+}
+td.polls ul{
+  position: absolute;
+  list-style: none;
+  margin-top: 110px;
+  margin-left:26px;
+  height: 183px;
+}
+td.polls li{
+  margin-top: 8px;
+}
+td.polls ul p{
+  margin-left: 21px;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #353f48;
+}
+/*2 кнопки Vote Result*/
+td.polls input{
+  float: left;
+}
+td.polls a{
+  margin-top: 312px;
+}
+td.polls a{
+  margin-left: 2px;
+  position: absolute;
+  width: 74px;
+  height: 20px;
+  padding-top: 2px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #1368a9;
+  border-radius: 1px;
+  background: rgb(207,210,212);
+  background: linear-gradient(0deg, rgba(207,210,212,1) 0%, rgba(255,255,255,1) 84%);
+}
+td.polls a.vote{
+  margin-left: 27px;
+}
+td.polls a.result{
+  margin-left: 114px;
+}
+td.polls a.vote img{
+  position: relative;
+  left: 38px;
+}
+td.polls a.result img{
+  position: relative;
+  left: 47px;
+}
+td.polls  a:hover{
+  background: cyan;
+}
+td.polls  a:active{
+  background-color: #5bcbff;
+}
+/*Поддон сайта*/
+td.footer{  
+  background-image: url("images/down_layer.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+td.footer p{
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #1368a9;
+  text-align:center;
+  margin-top:27px;
+}
