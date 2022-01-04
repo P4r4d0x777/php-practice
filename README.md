@@ -41,7 +41,7 @@ preg_match(
 	/xis", $email);
 ```
 - написать функцию my_url_pcre_parse(), получающую на вход url-адрес и возвращающую массив следующего вида:
-  
+
         (на примере: protocol://subdomain.domain3.domain2.zone:port/folder/subfolder/../././//../myfolder/script.php?var1=val1&var2=val2)
         array(
             'protocol'	=> 'protocol',
